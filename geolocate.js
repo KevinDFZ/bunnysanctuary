@@ -22,7 +22,7 @@ function geoFindMe() {
   if(!navigator.geolocation) {
     status.textContent = 'Geolocation is not supported by your browser';
   } else {
-    status.textContent = 'Locating…';
+    status.textContent = 'Locating your heartbeat…';
     navigator.geolocation.getCurrentPosition(success, error);
   }
 
